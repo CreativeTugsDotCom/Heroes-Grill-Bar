@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes Grill & Bar | Berlin, CT Restaurant & Pub</title>
+    <meta name="description" content="Visit Heroes Grill & Bar in Berlin, CT for classic burgers, wings, cold drinks, daily Happy Hour, Friday karaoke, and neighborhood hospitality.">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Heroes Grill & Bar - Authentic Neighborhood Pub & Grill">
+    <meta property="og:description" content="Good Food. Great Drinks. Good Company. 128 Mill Street, Berlin, CT.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(3).jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heroesRed: '#722C32',
+                        heroesRedDark: '#541f24',
+                        heroesCharcoal: '#24201E',
+                        heroesDarkBg: '#191615',
+                        heroesWalnut: '#70472F',
+                        heroesCream: '#E9DDC8',
+                        heroesCreamLight: '#F7F3EB',
+                        heroesBrass: '#B18A54',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Impact', 'Oswald', 'Bebas Neue', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #191615;
+            color: #E9DDC8;
+        }
+        .font-display {
+            font-family: 'Oswald', 'Impact', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        .hero-title-shadow {
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.8);
+        }
+        .custom-skew {
+            transform: skewX(-10deg);
+        }
+        .custom-skew-inner {
+            transform: skewX(10deg);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #191615;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #722C32;
+            border-radius: 4px;
+        }
+        /* Slanted menu card cutouts */
+        .slanted-card {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        @media (max-width: 768px) {
+            .slanted-card {
+                clip-path: none;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data for Local Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarOrPub",
+      "name": "Heroes Grill & Bar",
+      "image": "https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(3).jpg",
+      "@id": "https://www.facebook.com/p/Heroes-Grill-Bar-61575345936517/",
+      "url": "https://heroesgrillbar.com",
+      "telephone": "+18608289920",
+      "email": "varricchio128@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "128 Mill Street",
+        "addressLocality": "Berlin",
+        "addressRegion": "CT",
+        "postalCode": "06037",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6255378,
+        "longitude": -72.7490715
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Sunday"],
+          "opens": "11:30",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:30",
+          "closes": "00:00"
+        }
+      ],
+      "servesCuisine": ["American", "Pub Food", "Burgers", "Wings"]
+    }
+    </script>
+</head>
+<body class="bg-heroesDarkBg text-heroesCream antialiased selection:bg-heroesRed selection:text-white flex flex-col min-h-screen">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-heroesDarkBg/90 backdrop-blur-md border-b border-heroesRed/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- BRAND LOGO (SVG / Custom Typography Design) -->
+            <a href="#" onclick="navigateTo('home'); return false;" class="flex items-center gap-3 group focus:outline-none">
+                <div class="relative flex flex-col items-center">
+                    <!-- Dynamic Vector Badge Logo -->
+                    <div class="bg-gradient-to-r from-heroesRed via-[#8c363d] to-heroesRed text-white font-display text-2xl sm:text-3xl font-black italic tracking-wider px-4 py-1 rounded border-2 border-heroesBrass/80 shadow-lg group-hover:scale-105 transition-transform">
+                        HEROES
+                    </div>
+                    <div class="text-[10px] sm:text-xs font-bold tracking-[0.25em] text-heroesCream uppercase mt-0.5 border-t border-heroesBrass/40 pt-0.5 w-full text-center">
+                        GRILL & BAR
+                    </div>
+                </div>
+            </a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-bold tracking-wider uppercase">
+                <a href="#home" onclick="navigateTo('home')" class="nav-link text-heroesCream hover:text-heroesRed transition-colors">Home</a>
+                <a href="#menu" onclick="navigateTo('menu')" class="nav-link text-heroesCream hover:text-heroesRed transition-colors">Menu</a>
+                <a href="#events" onclick="navigateTo('events')" class="nav-link text-heroesCream hover:text-heroesRed transition-colors">Events</a>
+                <a href="#about" onclick="navigateTo('about')" class="nav-link text-heroesCream hover:text-heroesRed transition-colors">About</a>
+                <a href="#visit" onclick="navigateTo('visit')" class="nav-link text-heroesCream hover:text-heroesRed transition-colors">Visit Us</a>
+            </nav>
+
+            <!-- CALL NOW CTA BUTTON -->
+            <div class="hidden sm:block">
+                <a href="tel:+18608289920" class="inline-flex items-center gap-2 bg-heroesRed hover:bg-heroesRedDark text-white px-5 py-2.5 rounded-md font-bold uppercase text-sm tracking-wider transition-all transform hover:-translate-y-0.5 shadow-md shadow-heroesRed/20 border border-red-500/30">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+
+            <!-- MOBILE MENU TOGGLE -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden text-heroesCream focus:outline-none p-2 text-2xl" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE DROPDOWN MENU -->
+        <div id="mobileMenu" class="hidden md:hidden bg-heroesCharcoal border-b border-heroesRed/40 px-4 pt-3 pb-6 space-y-3 font-bold uppercase text-center text-lg">
+            <a href="#home" onclick="navigateTo('home'); toggleMobileMenu();" class="block py-2 text-heroesCream hover:text-heroesRed border-b border-white/5">Home</a>
+            <a href="#menu" onclick="navigateTo('menu'); toggleMobileMenu();" class="block py-2 text-heroesCream hover:text-heroesRed border-b border-white/5">Menu</a>
+            <a href="#events" onclick="navigateTo('events'); toggleMobileMenu();" class="block py-2 text-heroesCream hover:text-heroesRed border-b border-white/5">Events</a>
+            <a href="#about" onclick="navigateTo('about'); toggleMobileMenu();" class="block py-2 text-heroesCream hover:text-heroesRed border-b border-white/5">About Us</a>
+            <a href="#visit" onclick="navigateTo('visit'); toggleMobileMenu();" class="block py-2 text-heroesCream hover:text-heroesRed border-b border-white/5">Visit & Contact</a>
+            <a href="tel:+18608289920" class="inline-block mt-3 w-full bg-heroesRed py-3 rounded text-white font-bold tracking-wider">
+                <i class="fa-solid fa-phone mr-2"></i> Call +1 860-828-9920
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER (DYNAMIC SINGLE-PAGE ROUTING) -->
+    <main class="flex-grow pt-20">
+
+        <!-- ========================================================================= -->
+        <!-- 1. HOME PAGE VIEW -->
+        <!-- ========================================================================= -->
+        <div id="page-home" class="page-view">
+            
+            <!-- HERO SECTION -->
+            <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-heroesDarkBg border-b border-heroesRed/30">
+                <!-- Hero Background Image (Real Juicy Burger & Fries Photo) -->
+                <div class="absolute inset-0 z-0">
+                    <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(3).jpg" 
+                         alt="Heroes Grill Burger and Cold Beer" 
+                         class="w-full h-full object-cover object-center filter brightness-[0.45] contrast-125 scale-105 transform transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-gradient-to-t from-heroesDarkBg via-transparent to-heroesDarkBg/80"></div>
+                </div>
+
+                <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-heroesRed/80 text-white rounded-full text-xs sm:text-sm uppercase font-bold tracking-widest mb-6 border border-heroesBrass/50 shadow-lg">
+                        <i class="fa-solid fa-location-dot"></i> Berlin, Connecticut
+                    </div>
+                    
+                    <h1 class="font-display text-5xl sm:text-7xl md:text-8xl font-black uppercase text-white tracking-tight hero-title-shadow leading-none mb-4">
+                        Good Food. <br class="hidden sm:inline"/>
+                        Great Drinks. <br/>
+                        <span class="text-heroesRed italic underline decoration-heroesBrass decoration-4 underline-offset-8">Good Company.</span>
+                    </h1>
+
+                    <p class="max-w-2xl mx-auto text-lg sm:text-xl text-heroesCream/90 font-medium mb-8 drop-shadow-md">
+                        Your neighborhood spot for satisfying food, refreshing drinks, and a great time in Berlin, Connecticut.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#menu" onclick="navigateTo('menu')" class="w-full sm:w-auto bg-heroesRed hover:bg-heroesRedDark text-white px-8 py-4 rounded-md font-bold uppercase tracking-wider text-lg shadow-xl shadow-heroesRed/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 border border-red-500/30">
+                            <span>Explore Our Menu</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Heroes+Grill+%26+Bar/@41.6255378,-72.7516464,17z/data=!3m1!4b1!4m6!3m5!1s0x89e7b483c3d051b9:0xa650f5695470f6f9!8m2!3d41.6255378!4d-72.7490715!16s%2Fg%2F1tlmpbyc" target="_blank" rel="noopener" class="w-full sm:w-auto bg-transparent hover:bg-white/10 text-heroesCream border-2 border-heroesCream/60 px-8 py-3.5 rounded-md font-bold uppercase tracking-wider text-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-compass"></i>
+                            <span>Get Directions</span>
+                        </a>
+                    </div>
+
+                    <!-- Scroll Down Indicator -->
+                    <div class="mt-12 animate-bounce hidden md:block">
+                        <a href="#welcome" class="text-heroesCream/60 hover:text-heroesCream text-2xl">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WELCOME SECTION (Asymmetrical Layout matching reference) -->
+            <section id="welcome" class="py-20 bg-heroesCreamLight text-heroesCharcoal border-b border-heroesBrass/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        
+                        <!-- Real Pub Interior Image -->
+                        <div class="lg:col-span-7 relative group">
+                            <div class="absolute -inset-2 bg-heroesRed/20 rounded-xl transform -rotate-1 group-hover:rotate-0 transition-transform"></div>
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/939a2f41-07b6-4a98-abbd-209c656e8f14.jpg" 
+                                 alt="Heroes Grill Pub Interior Seating" 
+                                 class="relative rounded-lg shadow-2xl w-full h-[400px] object-cover border-4 border-white">
+                        </div>
+
+                        <!-- Content Block -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="inline-block border-b-2 border-heroesRed pb-1 text-heroesRed font-bold tracking-widest text-sm uppercase">
+                                Welcome to Heroes
+                            </div>
+                            <h2 class="font-display text-4xl sm:text-5xl font-black text-heroesCharcoal leading-tight">
+                                WELCOME TO HEROES.
+                            </h2>
+                            <p class="text-gray-800 text-lg leading-relaxed">
+                                Whether you're stopping by for a satisfying meal, meeting friends for drinks, or enjoying a night of entertainment, Heroes Grill & Bar is your neighborhood place to relax, connect, and enjoy good company.
+                            </p>
+                            <p class="text-gray-600">
+                                Enjoy traditional pub dining with red brick walls, comfortable wooden booths, screens for sports, and friendly local faces right here on Mill Street.
+                            </p>
+                            <div>
+                                <a href="#about" onclick="navigateTo('about')" class="inline-flex items-center gap-2 bg-heroesRed hover:bg-heroesRedDark text-white px-6 py-3 rounded font-bold uppercase tracking-wider text-sm transition-transform hover:translate-x-1">
+                                    <span>About Heroes</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOD HIGHLIGHTS SECTION -->
+            <section class="py-20 bg-heroesDarkBg text-heroesCream">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="font-display text-4xl sm:text-6xl font-black text-white uppercase tracking-tight">
+                            GOOD FOOD. <span class="text-heroesRed italic">NO SHORTCUTS.</span>
+                        </h2>
+                        <p class="mt-4 text-lg text-heroesCream/80">
+                            From classic burgers and crispy wings to fresh salads, sandwiches, and comfort food, there's something for everyone.
+                        </p>
+                    </div>
+
+                    <!-- Food Photo Grid (Using Real Supplied Photos) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Item 1: Burger -->
+                        <div class="bg-heroesCharcoal rounded-lg overflow-hidden border border-heroesBrass/20 group hover:border-heroesRed transition-colors">
+                            <div class="h-56 overflow-hidden relative">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(4).jpg" 
+                                     alt="Burgers at Heroes Grill" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-display text-2xl text-white uppercase">Classic Burgers</h3>
+                                <p class="text-sm text-heroesCream/70 mt-1">Juicy beef patties served with fresh fixings and crispy sides.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Wings -->
+                        <div class="bg-heroesCharcoal rounded-lg overflow-hidden border border-heroesBrass/20 group hover:border-heroesRed transition-colors">
+                            <div class="h-56 overflow-hidden relative">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(5).jpg" 
+                                     alt="Crispy Wings at Heroes" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-display text-2xl text-white uppercase">Crispy Wings</h3>
+                                <p class="text-sm text-heroesCream/70 mt-1">Bone-in & Dry Dock wings tossed in your favorite savory sauces.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Fresh Salads -->
+                        <div class="bg-heroesCharcoal rounded-lg overflow-hidden border border-heroesBrass/20 group hover:border-heroesRed transition-colors">
+                            <div class="h-56 overflow-hidden relative">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/80ea7772-4a67-4d4a-91d3-fee5e923d142.jpg" 
+                                     alt="Fresh Salad Options" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-display text-2xl text-white uppercase">Fresh Salads</h3>
+                                <p class="text-sm text-heroesCream/70 mt-1">Loaded tossed, chef, tuna, chicken, and grilled shrimp salads.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Mozzarella Sticks / Appetizers -->
+                        <div class="bg-heroesCharcoal rounded-lg overflow-hidden border border-heroesBrass/20 group hover:border-heroesRed transition-colors">
+                            <div class="h-56 overflow-hidden relative">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/916c8a5d-c991-49f3-a8d8-cd3f56cde217.jpg" 
+                                     alt="Appetizers at Heroes Grill" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-display text-2xl text-white uppercase">Appetizers</h3>
+                                <p class="text-sm text-heroesCream/70 mt-1">Mozzarella sticks, onion rings, quesadillas & chicken fingers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <a href="#menu" onclick="navigateTo('menu')" class="inline-flex items-center gap-2 bg-heroesRed hover:bg-heroesRedDark text-white px-8 py-4 rounded font-bold uppercase tracking-wider text-base transition-all">
+                            <span>View Full Menu</span>
+                            <i class="fa-solid fa-utensils"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BAR & HAPPY HOUR BANNER (Atmospheric Dark Banner) -->
+            <section class="relative py-16 bg-heroesCharcoal border-y border-heroesBrass/30 overflow-hidden">
+                <div class="absolute inset-0 opacity-25">
+                    <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/4010d820-0758-44df-98ee-021ac49d1c8c.jpg" alt="Bar Counter" class="w-full h-full object-cover">
+                </div>
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h2 class="font-display text-4xl sm:text-6xl font-black text-white uppercase italic">
+                            YOUR LOCAL SPOT <br class="hidden sm:inline"/>
+                            FOR <span class="text-heroesRed">GOOD TIMES.</span>
+                        </h2>
+                        <p class="text-heroesCream/80 mt-2 text-lg">Ice cold draught beer, refreshing cocktails, and neighborhood warmth.</p>
+                    </div>
+
+                    <!-- Happy Hour Badge -->
+                    <div class="bg-gradient-to-br from-heroesRed to-heroesRedDark p-6 rounded-xl border-2 border-heroesBrass shadow-2xl text-center transform rotate-1">
+                        <div class="text-white font-display text-2xl uppercase tracking-widest flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-clock"></i> Daily Happy Hour
+                        </div>
+                        <div class="text-3xl sm:text-5xl font-black text-heroesCream font-display mt-1">
+                            2 PM – 6 PM
+                        </div>
+                        <div class="text-xs text-white/80 uppercase tracking-widest mt-1">Every Day at the Bar</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ENTERTAINMENT HIGHLIGHT (Friday Karaoke & Music Bingo) -->
+            <section class="py-20 bg-heroesDarkBg">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="font-display text-4xl sm:text-6xl font-black text-white uppercase">
+                            MORE THAN <span class="text-heroesRed italic">JUST A MEAL.</span>
+                        </h2>
+                        <p class="text-heroesCream/80 text-lg mt-2">Join us for weekly karaoke, Music Bingo, and lively neighborhood entertainment!</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Feature 1: Friday Karaoke -->
+                        <div class="bg-heroesCharcoal/90 rounded-xl p-8 border border-heroesRed/40 relative overflow-hidden flex flex-col justify-between">
+                            <div class="relative z-10">
+                                <div class="inline-block bg-heroesRed text-white text-xs font-bold uppercase px-3 py-1 rounded-full mb-4">
+                                    Weekly Event
+                                </div>
+                                <h3 class="font-display text-3xl sm:text-4xl text-white uppercase">Friday Karaoke</h3>
+                                <p class="text-heroesBrass font-bold text-lg mt-1"><i class="fa-solid fa-calendar-days mr-2"></i> Every Friday | 5 PM – 8 PM</p>
+                                <p class="text-heroesCream/80 mt-4 leading-relaxed">
+                                    Join us every Friday night for karaoke, good company, and a great time at Heroes. Grab the mic or cheer on your friends!
+                                </p>
+                            </div>
+                            <div class="mt-8 relative z-10">
+                                <a href="#events" onclick="navigateTo('events')" class="inline-block bg-transparent hover:bg-heroesRed border border-heroesRed text-white px-6 py-2.5 rounded font-bold uppercase text-sm transition-colors">
+                                    Event Details
+                                </a>
+                            </div>
+                            <i class="fa-solid fa-microphone-lines absolute -bottom-6 -right-6 text-9xl text-white/5"></i>
+                        </div>
+
+                        <!-- Feature 2: Music Bingo (Dynamic Countdown/Expiration Logic) -->
+                        <div class="bg-heroesCharcoal/90 rounded-xl p-8 border border-heroesBrass/40 relative overflow-hidden flex flex-col justify-between" id="homeBingoCardContainer">
+                            <div class="relative z-10">
+                                <div id="bingoStatusBadge" class="inline-block bg-heroesBrass text-heroesCharcoal text-xs font-bold uppercase px-3 py-1 rounded-full mb-4">
+                                    Upcoming Special Event
+                                </div>
+                                <h3 class="font-display text-3xl sm:text-4xl text-white uppercase">Music Bingo</h3>
+                                <p class="text-heroesBrass font-bold text-lg mt-1"><i class="fa-solid fa-clock mr-2"></i> Monday, Nov 9, 2026 | Starts 7 PM</p>
+                                <p class="text-heroesCream/80 mt-4 leading-relaxed">
+                                    Listen, sing along, mark your card. Play with a printed card or on your phone! Cash equivalent prizes will be awarded.
+                                </p>
+                            </div>
+                            <div class="mt-8 relative z-10">
+                                <a href="#events" onclick="navigateTo('events')" class="inline-block bg-heroesBrass hover:bg-amber-600 text-heroesCharcoal font-bold px-6 py-2.5 rounded uppercase text-sm transition-colors">
+                                    View Song Cards & Details
+                                </a>
+                            </div>
+                            <i class="fa-solid fa-music absolute -bottom-6 -right-6 text-9xl text-white/5"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LOCATION & HOURS PREVIEW -->
+            <section class="py-16 bg-heroesCreamLight text-heroesCharcoal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        
+                        <!-- Embedded Google Map -->
+                        <div class="lg:col-span-6 h-80 rounded-xl overflow-hidden shadow-xl border-2 border-heroesBrass/40">
+                            <iframe 
+                                title="Heroes Grill Location Map"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0" 
+                                loading="lazy" 
+                                allowfullscreen 
+                                src="https://maps.google.com/maps?q=Heroes%20Grill%20%26%20Bar%20128%20Mill%20Street%20Berlin%20CT%2006037&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+
+                        <!-- Quick Info Box -->
+                        <div class="lg:col-span-6 space-y-6">
+                            <h2 class="font-display text-4xl font-black uppercase text-heroesCharcoal">
+                                VISIT US IN BERLIN
+                            </h2>
+                            <div class="space-y-3 text-lg">
+                                <p class="flex items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-heroesRed mt-1"></i>
+                                    <span><strong>Address:</strong> 128 Mill Street, Berlin, CT 06037</span>
+                                </p>
+                                <p class="flex items-center gap-3">
+                                    <i class="fa-solid fa-phone text-heroesRed"></i>
+                                    <span><strong>Phone:</strong> <a href="tel:+18608289920" class="hover:text-heroesRed underline">+1 860-828-9920</a></span>
+                                </p>
+                                <p class="flex items-center gap-3">
+                                    <i class="fa-solid fa-envelope text-heroesRed"></i>
+                                    <span><strong>Email:</strong> <a href="mailto:varricchio128@gmail.com" class="hover:text-heroesRed underline">varricchio128@gmail.com</a></span>
+                                </p>
+                            </div>
+
+                            <!-- Opening Hours Table -->
+                            <div class="bg-white p-5 rounded-lg border border-gray-300 shadow-sm">
+                                <h3 class="font-bold text-heroesCharcoal uppercase mb-2 border-b pb-1 text-sm tracking-wider">Hours of Operation</h3>
+                                <div class="grid grid-cols-2 text-sm gap-y-1">
+                                    <div>Mon & Tue:</div><div class="font-medium text-right">11:30 AM – 10:00 PM</div>
+                                    <div>Wed – Sat:</div><div class="font-medium text-right">11:30 AM – 12:00 AM</div>
+                                    <div>Sunday:</div><div class="font-medium text-right">11:30 AM – 10:00 PM</div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-4 pt-2">
+                                <a href="https://www.google.com/maps/place/Heroes+Grill+%26+Bar/@41.6255378,-72.7516464,17z/data=!3m1!4b1!4m6!3m5!1s0x89e7b483c3d051b9:0xa650f5695470f6f9!8m2!3d41.6255378!4d-72.7490715!16s%2Fg%2F1tlmpbyc" target="_blank" rel="noopener" class="bg-heroesRed hover:bg-heroesRedDark text-white px-6 py-3 rounded font-bold uppercase text-sm tracking-wider flex items-center gap-2">
+                                    <i class="fa-solid fa-route"></i> Get Directions
+                                </a>
+                                <a href="https://www.facebook.com/p/Heroes-Grill-Bar-61575345936517/" target="_blank" rel="noopener" class="bg-[#1877F2] hover:bg-blue-700 text-white px-6 py-3 rounded font-bold uppercase text-sm tracking-wider flex items-center gap-2">
+                                    <i class="fa-brands fa-facebook-f"></i> Facebook Page
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FINAL HOMEPAGE CALL TO ACTION BANNER -->
+            <section class="py-16 bg-heroesRed text-white text-center border-t-2 border-heroesBrass">
+                <div class="max-w-4xl mx-auto px-4">
+                    <h2 class="font-display text-4xl sm:text-6xl font-black uppercase">MAKE HEROES YOUR NEXT STOP.</h2>
+                    <p class="text-xl text-white/90 mt-2">Great food, good drinks, and good company are waiting.</p>
+                    <div class="mt-8 flex flex-wrap justify-center gap-4">
+                        <a href="tel:+18608289920" class="bg-heroesCharcoal hover:bg-black text-white px-8 py-3.5 rounded font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-phone mr-2"></i> Call Heroes
+                        </a>
+                        <a href="#menu" onclick="navigateTo('menu')" class="bg-white hover:bg-heroesCream text-heroesCharcoal px-8 py-3.5 rounded font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-book-open mr-2"></i> Explore Menu
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 2. MENU PAGE VIEW -->
+        <!-- ========================================================================= -->
+        <div id="page-menu" class="page-view hidden">
+            
+            <section class="bg-heroesCharcoal py-12 border-b border-heroesRed/30">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h1 class="font-display text-5xl sm:text-7xl font-black text-white uppercase">OUR MENU</h1>
+                    <p class="text-heroesCream/80 text-lg mt-2">Authentic pub favorites, made fresh to order in Berlin, CT.</p>
+                    
+                    <!-- Takeout Notice -->
+                    <div class="inline-flex items-center gap-2 bg-heroesRed/20 text-heroesCream px-4 py-2 rounded-full border border-heroesRed/40 text-sm mt-4">
+                        <i class="fa-solid fa-box font-bold text-heroesRed"></i>
+                        <span><strong>Takeout Available:</strong> Grab & Go on paper or plastic! Call <a href="tel:+18608289920" class="underline font-bold">+1 860-828-9920</a></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 bg-heroesDarkBg">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <!-- MENU CATEGORY NAV FILTER -->
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12 sticky top-20 z-30 bg-heroesDarkBg/95 py-4 border-b border-heroesBrass/20 backdrop-blur-md" id="menuNavContainer">
+                        <button onclick="filterMenu('all')" class="menu-filter-btn active bg-heroesRed text-white px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">All Categories</button>
+                        <button onclick="filterMenu('salads')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Salads</button>
+                        <button onclick="filterMenu('lighter')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">The Lighter Side</button>
+                        <button onclick="filterMenu('dinners')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Dinners</button>
+                        <button onclick="filterMenu('wraps')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Sandwiches & Wraps</button>
+                        <button onclick="filterMenu('appetizers')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Appetizers</button>
+                        <button onclick="filterMenu('grill')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">From The Grill</button>
+                        <button onclick="filterMenu('sides')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Sides & Extras</button>
+                        <button onclick="filterMenu('kids')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Kids Meal</button>
+                        <button onclick="filterMenu('drinks')" class="menu-filter-btn bg-heroesCharcoal hover:bg-heroesRed text-heroesCream px-4 py-2 rounded-md font-bold uppercase text-xs sm:text-sm tracking-wider">Drinks</button>
+                    </div>
+
+                    <!-- DYNAMIC MENU RENDER CONTAINER -->
+                    <div id="menuRenderGrid" class="space-y-16">
+                        <!-- Menu items dynamically injected via JS with exact prices and formatting -->
+                    </div>
+
+                    <!-- MENU DISCLAIMER & NOTES -->
+                    <div class="mt-16 bg-heroesCharcoal/50 p-6 rounded-lg border border-heroesBrass/20 text-xs sm:text-sm text-heroesCream/70 space-y-2">
+                        <p><strong>Consumer Advisory:</strong> Consuming raw or undercooked meat, poultry, or seafood may increase your risk of foodborne illness.</p>
+                        <p><strong>Note on Pricing:</strong> Menu items and prices reflect our original physical menu listings. Portions and combos may vary per section (e.g., side choices vs standalone baskets).</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 3. EVENTS & ENTERTAINMENT PAGE VIEW -->
+        <!-- ========================================================================= -->
+        <div id="page-events" class="page-view hidden">
+            
+            <section class="bg-heroesCharcoal py-12 border-b border-heroesRed/30">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h1 class="font-display text-5xl sm:text-7xl font-black text-white uppercase">EVENTS & ENTERTAINMENT</h1>
+                    <p class="text-heroesCream/80 text-lg mt-2">Karaoke, Music Bingo, Live Games & Neighborhood Fun at Heroes.</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-heroesDarkBg space-y-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                    
+                    <!-- FRIDAY KARAOKE DETAILED SECTION -->
+                    <div class="bg-heroesCharcoal rounded-2xl overflow-hidden border border-heroesRed/40 grid grid-cols-1 lg:grid-cols-12 shadow-2xl">
+                        <div class="lg:col-span-5 h-72 lg:h-auto relative">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/883718071_122135044754844864_3559219963115064062_n.jpg" 
+                                 alt="Friday Karaoke Flyer" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
+                            <div>
+                                <div class="inline-block bg-heroesRed text-white font-bold text-xs uppercase px-3 py-1 rounded mb-4">
+                                    Every Friday Night
+                                </div>
+                                <h2 class="font-display text-4xl sm:text-5xl text-white uppercase">FRIDAY NIGHT KARAOKE</h2>
+                                <p class="text-heroesBrass font-bold text-xl mt-2"><i class="fa-solid fa-clock mr-2"></i> 5:00 PM – 8:00 PM</p>
+                                <p class="text-heroesCream/80 text-lg mt-6 leading-relaxed">
+                                    Join us every Friday night for the best karaoke, good company, and a great time at Heroes Grill & Bar. Bring your friends, grab a microphone, order your favorite food and drinks, and sing your heart out!
+                                </p>
+                            </div>
+                            <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center gap-4">
+                                <a href="tel:+18608289920" class="bg-heroesRed hover:bg-heroesRedDark text-white px-6 py-3 rounded font-bold uppercase text-sm">
+                                    Call Ahead / Inquire
+                                </a>
+                                <span class="text-xs text-heroesCream/60">No admission fee required!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MUSIC BINGO SECTION WITH INTERACTIVE BINGO CARD -->
+                    <div class="bg-heroesCharcoal rounded-2xl p-8 sm:p-12 border border-heroesBrass/40 shadow-2xl relative" id="eventsBingoSection">
+                        <div class="max-w-4xl mx-auto text-center">
+                            <div id="eventsBingoBadge" class="inline-block bg-heroesBrass text-heroesCharcoal font-bold text-xs uppercase px-3 py-1 rounded mb-4">
+                                Special Event
+                            </div>
+                            <h2 class="font-display text-4xl sm:text-6xl text-white uppercase">HEROES GRILL & BAR MUSIC BINGO</h2>
+                            <p class="text-heroesBrass text-2xl font-bold mt-2"><i class="fa-solid fa-calendar-day mr-2"></i> Monday, November 9, 2026 | Starts at 7:00 PM</p>
+                            <p class="text-heroesCream/80 text-lg mt-4 max-w-2xl mx-auto">
+                                "Listen, sing along, mark your card. Play with a printed card or on your phone! Cash equivalent prizes will be awarded."
+                            </p>
+
+                            <!-- Countdown timer box for upcoming event -->
+                            <div id="bingoCountdownBox" class="mt-8 bg-heroesDarkBg/80 p-4 rounded-lg border border-heroesBrass/30 inline-block">
+                                <div class="text-xs uppercase tracking-widest text-heroesBrass font-bold mb-1">Event Status</div>
+                                <div id="bingoTimerText" class="font-display text-2xl text-white">Event Date: Nov 9, 2026</div>
+                            </div>
+                        </div>
+
+                        <!-- 5x5 MUSIC BINGO CARD INTERACTIVE GRID -->
+                        <div class="mt-12 max-w-3xl mx-auto">
+                            <h3 class="text-center font-display text-2xl text-heroesBrass uppercase mb-4">Sample 5x5 Music Bingo Card</h3>
+                            <div class="grid grid-cols-5 gap-1.5 sm:gap-3 bg-heroesDarkBg p-3 sm:p-5 rounded-xl border border-heroesBrass/30 text-center font-bold text-xs sm:text-sm">
+                                
+                                <!-- ROW 1 -->
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">My Girl</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Dancing Queen</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Sweet Caroline</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Love Shack</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Respect</div>
+
+                                <!-- ROW 2 -->
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Twist & Shout</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Jolene</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Billie Jean</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Stand by Me</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">YMCA</div>
+
+                                <!-- ROW 3 -->
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Brown Eyed Girl</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Heat Wave</div>
+                                <div class="bg-heroesRed p-2 sm:p-4 rounded border-2 border-heroesBrass text-white font-black flex items-center justify-center min-h-[60px] text-sm uppercase shadow-lg">FREE SPACE</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Take on Me</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Hey Jude</div>
+
+                                <!-- ROW 4 -->
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">I Will Survive</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Piano Man</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Wild Thing</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Let It Be</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Roar</div>
+
+                                <!-- ROW 5 -->
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Happy</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Love Me Do</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Lean on Me</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Get Lucky</div>
+                                <div class="bg-heroesCharcoal p-2 sm:p-4 rounded border border-white/5 hover:bg-heroesRed transition-colors cursor-pointer text-white flex items-center justify-center min-h-[60px]">Bad Moon Rising</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 4. ABOUT PAGE VIEW -->
+        <!-- ========================================================================= -->
+        <div id="page-about" class="page-view hidden">
+            
+            <section class="bg-heroesCharcoal py-12 border-b border-heroesRed/30">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h1 class="font-display text-5xl sm:text-7xl font-black text-white uppercase">ABOUT HEROES</h1>
+                    <p class="text-heroesCream/80 text-lg mt-2">Authentic American Neighborhood Grill & Bar in Berlin, CT.</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-heroesDarkBg text-heroesCream">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-6">
+                            <h2 class="font-display text-4xl sm:text-5xl font-black text-white uppercase">YOUR NEIGHBORHOOD GRILL & BAR</h2>
+                            <p class="text-lg text-heroesCream/90 leading-relaxed">
+                                Heroes Grill & Bar brings together classic comfort food, refreshing drinks, and a welcoming neighborhood atmosphere. Whether you're joining us for a meal, catching up with friends, or enjoying a night of karaoke, there's always a reason to stop by.
+                            </p>
+                            <p class="text-heroesCream/80 leading-relaxed">
+                                Located at 128 Mill Street in Berlin, CT, we pride ourselves on being a genuine local pub where regulars and newcomers alike feel right at home. With sports screens, classic wood and brick finishes, hot burgers, and cold beers, Heroes is your local spot for good times.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/751915386_122120670170844864_7547677666869890509_n.jpg" alt="Heroes Pub Exterior" class="rounded-lg border border-heroesBrass/30 h-60 w-full object-cover">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/5fb14e84-156e-409c-ba01-e026ceb32bd4.jpg" alt="Bar Counter Details" class="rounded-lg border border-heroesBrass/30 h-60 w-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- REAL PHOTO GALLERY -->
+                    <div>
+                        <h3 class="font-display text-3xl text-white uppercase mb-8 text-center">THE HEROES ATMOSPHERE & GALLEY</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/9982c14a-7f8e-4ed0-81f9-1e3fc81897e9.jpg" alt="Bar Lounge" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/9e09ae0a-ecdc-406c-b621-87200e0475a1.jpg" alt="Seating Area" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/ce2fbf55-9d6b-45af-9405-d1337712315f.jpg" alt="Taps & Drinks" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(8).jpg" alt="Cold Beer Taps" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(6).jpg" alt="Sandwiches & Fries" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/unnamed%20(7).jpg" alt="Tasty Dishes" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/1c55bfc9-dd84-4f5c-88c6-fbd170760948.jpg" alt="Menu & Atmosphere" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/res/refs/heads/main/705beac4-4d85-45b2-a6d6-637085e2a657.jpg" alt="Grill Food" class="rounded h-48 w-full object-cover hover:opacity-90 transition-opacity">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- 5. VISIT US / CONTACT PAGE VIEW -->
+        <!-- ========================================================================= -->
+        <div id="page-visit" class="page-view hidden">
+            
+            <section class="bg-heroesCharcoal py-12 border-b border-heroesRed/30">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h1 class="font-display text-5xl sm:text-7xl font-black text-white uppercase">VISIT HEROES</h1>
+                    <p class="text-heroesCream/80 text-lg mt-2">Find us on Mill Street in Berlin, CT. Stop in today!</p>
+                </div>
+            </section>
+
+            <section class="py-16 bg-heroesDarkBg text-heroesCream">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        
+                        <!-- Contact Info Column -->
+                        <div class="lg:col-span-6 space-y-8">
+                            <div class="bg-heroesCharcoal p-8 rounded-xl border border-heroesBrass/30 space-y-6">
+                                <h2 class="font-display text-3xl text-white uppercase border-b border-white/10 pb-3">Contact & Location</h2>
+                                <div class="space-y-4 text-lg">
+                                    <p class="flex items-start gap-4">
+                                        <i class="fa-solid fa-location-dot text-heroesRed text-2xl mt-1"></i>
+                                        <div>
+                                            <strong class="block text-white">Address</strong>
+                                            <span>128 Mill Street, Berlin, CT 06037, USA</span>
+                                        </div>
+                                    </p>
+                                    <p class="flex items-start gap-4">
+                                        <i class="fa-solid fa-phone text-heroesRed text-2xl mt-1"></i>
+                                        <div>
+                                            <strong class="block text-white">Phone Number</strong>
+                                            <a href="tel:+18608289920" class="hover:text-heroesRed underline">+1 860-828-9920</a>
+                                        </div>
+                                    </p>
+                                    <p class="flex items-start gap-4">
+                                        <i class="fa-solid fa-envelope text-heroesRed text-2xl mt-1"></i>
+                                        <div>
+                                            <strong class="block text-white">Email Address</strong>
+                                            <a href="mailto:varricchio128@gmail.com" class="hover:text-heroesRed underline">varricchio128@gmail.com</a>
+                                        </div>
+                                    </p>
+                                    <p class="flex items-start gap-4">
+                                        <i class="fa-brands fa-facebook text-heroesRed text-2xl mt-1"></i>
+                                        <div>
+                                            <strong class="block text-white">Facebook Page</strong>
+                                            <a href="https://www.facebook.com/p/Heroes-Grill-Bar-61575345936517/" target="_blank" rel="noopener" class="hover:text-heroesRed underline">Heroes Grill & Bar on Facebook</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Takeout Info Card -->
+                            <div class="bg-heroesRed/20 p-8 rounded-xl border border-heroesRed/50 space-y-3">
+                                <h3 class="font-display text-2xl text-white uppercase flex items-center gap-2">
+                                    <i class="fa-solid fa-bag-shopping text-heroesRed"></i> Takeout Information
+                                </h3>
+                                <p class="text-heroesCream/90">
+                                    "Grab & Go. To go on paper or plastic, we have you covered!"
+                                </p>
+                                <p class="text-sm text-heroesCream/80">
+                                    Call us directly at <a href="tel:+18608289920" class="font-bold underline text-white">+1 860-828-9920</a> to place your takeout order.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hours & Map Column -->
+                        <div class="lg:col-span-6 space-y-8">
+                            <div class="bg-heroesCharcoal p-8 rounded-xl border border-heroesBrass/30">
+                                <h2 class="font-display text-3xl text-white uppercase border-b border-white/10 pb-3 mb-4">Hours of Operation</h2>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Monday</span>
+                                        <span>11:30 AM – 10:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Tuesday</span>
+                                        <span>11:30 AM – 10:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Wednesday</span>
+                                        <span>11:30 AM – 12:00 AM</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Thursday</span>
+                                        <span>11:30 AM – 12:00 AM</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Friday</span>
+                                        <span>11:30 AM – 12:00 AM</span>
+                                    </div>
+                                    <div class="flex justify-between border-b border-white/5 pb-2">
+                                        <span class="font-bold">Saturday</span>
+                                        <span>11:30 AM – 12:00 AM</span>
+                                    </div>
+                                    <div class="flex justify-between pb-2">
+                                        <span class="font-bold">Sunday</span>
+                                        <span>11:30 AM – 10:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Map Container -->
+                            <div class="h-64 rounded-xl overflow-hidden border border-heroesBrass/30 shadow-lg">
+                                <iframe 
+                                    title="Google Maps Location"
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0" 
+                                    loading="lazy" 
+                                    allowfullscreen 
+                                    src="https://maps.google.com/maps?q=Heroes%20Grill%20%26%20Bar%20128%20Mill%20Street%20Berlin%20CT%2006037&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-heroesCream border-t-2 border-heroesRed py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
+                
+                <!-- Logo -->
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="bg-heroesRed text-white font-display text-2xl font-black italic tracking-wider px-3 py-1 rounded border border-heroesBrass/60">
+                        HEROES
+                    </div>
+                    <div class="text-[10px] font-bold tracking-[0.2em] text-heroesCream uppercase mt-1">
+                        GRILL & BAR • BERLIN, CT
+                    </div>
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="flex flex-wrap justify-center gap-6 font-bold text-xs sm:text-sm uppercase tracking-wider text-heroesCream/80">
+                    <a href="#home" onclick="navigateTo('home')" class="hover:text-heroesRed">Home</a>
+                    <a href="#menu" onclick="navigateTo('menu')" class="hover:text-heroesRed">Menu</a>
+                    <a href="#events" onclick="navigateTo('events')" class="hover:text-heroesRed">Events</a>
+                    <a href="#about" onclick="navigateTo('about')" class="hover:text-heroesRed">About</a>
+                    <a href="#visit" onclick="navigateTo('visit')" class="hover:text-heroesRed">Visit Us</a>
+                </div>
+
+                <!-- Social & Phone Link -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/p/Heroes-Grill-Bar-61575345936517/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-heroesCharcoal flex items-center justify-center hover:bg-heroesRed transition-colors">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Heroes+Grill+%26+Bar/@41.6255378,-72.7516464,17z/data=!3m1!4b1!4m6!3m5!1s0x89e7b483c3d051b9:0xa650f5695470f6f9!8m2!3d41.6255378!4d-72.7490715!16s%2Fg%2F1tlmpbyc" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-heroesCharcoal flex items-center justify-center hover:bg-heroesRed transition-colors">
+                        <i class="fa-solid fa-map-pin text-white"></i>
+                    </a>
+                    <a href="tel:+18608289920" class="w-10 h-10 rounded-full bg-heroesCharcoal flex items-center justify-center hover:bg-heroesRed transition-colors">
+                        <i class="fa-solid fa-phone text-white"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-heroesCream/50 space-y-2">
+                <p>&copy; 2026 Heroes Grill & Bar. All Rights Reserved. | 128 Mill Street, Berlin, CT 06037 | Phone: +1 860-828-9920</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Mobile Action Bar Links -->
+        <a href="https://www.google.com/maps/place/Heroes+Grill+%26+Bar/@41.6255378,-72.7516464,17z/data=!3m1!4b1!4m6!3m5!1s0x89e7b483c3d051b9:0xa650f5695470f6f9!8m2!3d41.6255378!4d-72.7490715!16s%2Fg%2F1tlmpbyc" target="_blank" rel="noopener" class="flex flex-col items-center text-xs text-heroesCream hover:text-heroesRed py-1 px-3">
+            <i class="fa-solid fa-location-arrow text-base text-heroesRed"></i>
+            <span class="mt-0.5">Directions</span>
+        </a>
+    </div>
+
+    <!-- DYNAMIC DYNAMIC PROMPT TOAST BANNER (Cycles every 15 Seconds) -->
+    <div id="visitingPrompt" class="fixed bottom-16 right-4 left-4 sm:left-auto sm:w-96 z-40 bg-heroesCharcoal p-4 rounded-xl border-2 border-heroesBrass/70 shadow-2xl hidden transform transition-all duration-500 ease-in-out">
+        <div class="flex justify-between items-start gap-2">
+            <div id="promptTag" class="inline-block bg-heroesRed text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">
+                Heroes Spotlight
+            </div>
+            <button onclick="dismissPrompt()" class="text-heroesCream/60 hover:text-white text-xs p-1" aria-label="Close notification"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="promptTitle" class="font-display text-xl text-white mt-1">Planning a visit?</div>
+        <p id="promptBody" class="text-xs text-heroesCream/80 mt-1 leading-relaxed">Explore our daily specials or get step-by-step directions to Mill Street!</p>
+        <div id="promptActions" class="mt-3 flex gap-2">
+            <a id="promptPrimaryBtn" href="#menu" onclick="navigateTo('menu'); dismissPrompt();" class="bg-heroesRed hover:bg-heroesRedDark text-white text-xs px-3.5 py-2 rounded font-bold uppercase tracking-wider flex items-center gap-1.5 shadow">
+                <span>View Menu</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a id="promptSecondaryBtn" href="tel:+18608289920" class="bg-heroesBrass hover:bg-amber-600 text-heroesCharcoal text-xs px-3.5 py-2 rounded font-bold uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Now</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT APPLICATION LOGIC -->
+    <script>
+        // Complete Menu Structured Data based on exact transcriptions supplied
+        const MENU_DATA = [
+            {
+                category: 'salads',
+                categoryTitle: 'SALADS',
+                intro: 'All salads are made fresh with lettuce, tomatoes, onions, green peppers, cucumbers, and cheese. Choice of dressing: French, Ranch, Italian, Thousand Island, Blue Cheese, or Greek.',
+                items: [
+                    { name: 'Tossed Salad', price: '$7.45', desc: 'Fresh crisp garden greens and vegetable toppings with your choice of dressing.' },
+                    { name: 'Chef Salad', price: '$9.95', desc: 'Standard salad topped with ham and turkey.' },
+                    { name: 'Tuna Salad', price: '$9.75', desc: 'Tossed salad topped with fresh-made tuna salad.' },
+                    { name: 'Grilled Chicken Salad', price: '$9.75', desc: 'Tossed salad topped with hot grilled chicken.' },
+                    { name: 'Buffalo Chicken Salad', price: '$9.75', desc: 'Tossed salad topped with hot buffalo-style chicken.' },
+                    { name: 'Grilled Shrimp Salad', price: '$11.75', desc: 'Tossed salad topped with hot grilled shrimp.' }
+                ]
+            },
+            {
+                category: 'lighter',
+                categoryTitle: 'THE LIGHTER SIDE',
+                intro: 'All Lighter Side items are served with a side of coleslaw.',
+                items: [
+                    { name: 'Bowl of Soup', price: '$3.95', desc: 'Warm savory soup bowl made fresh daily.' },
+                    { name: 'Cup of Soup', price: '$2.45', desc: 'Perfect quick starter cup.' },
+                    { name: 'Blitzen\'s Soup', price: '$4.25', desc: 'Fresh, hot, and seasonal. Check our specials or ask your server.' },
+                    { name: 'Salad & Soup Combo', price: '$7.95', desc: 'Your choice of tossed salad and bowl of soup.' },
+                    { name: 'Breaded Chicken Fingers', price: '$8.45', desc: 'Crispy chicken strips, cooked golden brown.' },
+                    { name: 'Six Piece Wings (Bone-In)', price: '$7.45', desc: 'Choice of hot, mild, BBQ, teriyaki, or dry rub.' },
+                    { name: 'Dry Dock Wings', price: '$8.45', desc: 'Baked and seasoned to perfection.' },
+                    { name: 'Mozzarella Sticks (5)', price: '$5.95', desc: 'Deep-fried and served with marinara sauce.' },
+                    { name: 'Onion Rings Basket (8)', price: '$5.95', desc: 'Crispy-fried and delicious.' }
+                ]
+            },
+            {
+                category: 'dinners',
+                categoryTitle: 'DINNERS',
+                intro: 'Each dinner is served with your choice of French fries or tater tots, a side salad, and a slice of Texas toast.',
+                items: [
+                    { name: 'Fish & Chips', price: '$12.45', desc: 'A classic favorite, golden-brown fried fish fillets.' },
+                    { name: 'Shrimp Basket', price: '$12.45', desc: 'Generous portion of breaded, golden-fried shrimp.' }
+                ]
+            },
+            {
+                category: 'wraps',
+                categoryTitle: 'SANDWICHES & WRAPS',
+                intro: 'Sandwiches and wraps are served with your choice of French fries or tater tots.',
+                items: [
+                    { name: 'Chicken BLT', price: '$7.95', desc: 'Grilled or breaded chicken, bacon, lettuce, tomato, and mayo.' },
+                    { name: 'BLT', price: '$5.75', desc: 'Classic bacon, lettuce, and tomato on toasted bread.' },
+                    { name: 'Chili Dog, Red Dog, and Sauerkraut & Relish Combo', price: '$6.95', desc: 'A savory pub platter combo.' },
+                    { name: 'Italian Sub', price: '$8.25', desc: 'Ham, salami, provolone, lettuce, tomato, onion, and Italian dressing.' }
+                ]
+            },
+            {
+                category: 'appetizers',
+                categoryTitle: 'APPETIZERS',
+                intro: 'Great for sharing around the bar!',
+                items: [
+                    { name: 'Soup (Bowl)', price: '$3.95', desc: 'Warm comforting bowl of daily soup.' },
+                    { name: 'Soup (Cup)', price: '$2.45', desc: 'Warm comforting cup of daily soup.' },
+                    { name: 'French Fries Basket', price: '$3.25', desc: 'Thick, hot, and seasoned to perfection.' },
+                    { name: 'Tater Tots Basket', price: '$3.25', desc: 'Crunchy, hot potato tots.' },
+                    { name: 'Mozzarella Sticks (5)', price: '$5.25', desc: 'Crispy outside, melty cheese inside.' },
+                    { name: 'Chicken Fingers (3)', price: '$5.25', desc: 'Crispy and tender chicken strips.' },
+                    { name: 'Onion Rings Basket', price: '$5.25', desc: 'Golden-brown batter-fried rings.' },
+                    { name: 'Half Tossed Salad', price: '$4.45', desc: 'Smaller portion of fresh tossed salad.' },
+                    { name: 'Half Fries', price: '$3.25', desc: 'Half basket portion of crisp fries.' },
+                    { name: 'Big Hot Dog', price: '$4.25', desc: 'Large grilled beef hot dog served with condiments.' },
+                    { name: 'Cheese Quesadilla', price: '$4.75', desc: 'Flour tortilla with melted cheese, served with salsa and sour cream.' },
+                    { name: 'Chicken Quesadilla', price: '$6.25', desc: 'Flour tortilla with grilled chicken and melted cheese.' },
+                    { name: 'Shrimp Quesadilla', price: '$8.25', desc: 'Flour tortilla stuffed with tender shrimp and cheese.' }
+                ]
+            },
+            {
+                category: 'grill',
+                categoryTitle: 'FROM THE GRILL',
+                intro: 'Ordering a meal includes your choice of one side.',
+                items: [
+                    { name: 'Hamburger', price: '$8.45', desc: 'Classic grilled beef patty.' },
+                    { name: 'Double Hamburger', price: '$9.95', desc: 'Two juicy grilled beef patties.' },
+                    { name: 'Bacon Cheeseburger', price: '$10.45', desc: 'Topped with crispy bacon and melted cheese.' },
+                    { name: 'Steak and Cheese', price: '$8.95', desc: 'Thin-shaved, seasoned, topped with cheese and onions.' },
+                    { name: 'Crispy or Grilled Chicken', price: '$8.45', desc: 'Served with lettuce, tomato, pickle, onion. Choice of BBQ or Buffalo sauce.' },
+                    { name: 'Grilled Kickers (2)', price: '$8.45', desc: 'Jalapeño, cheddar, and bacon blend.' },
+                    { name: 'Regular Hot Dog', price: '$6.95', desc: 'Classic grilled hot dog with side.' },
+                    { name: 'Cheesy Wiener', price: '$7.25', desc: 'Hot dog smothered in rich cheese sauce.' },
+                    { name: 'Dry Dock Chili Dog', price: '$7.95', desc: 'Topped with savory home-style chili.' }
+                ]
+            },
+            {
+                category: 'sides',
+                categoryTitle: 'SIDES AND EXTRAS',
+                intro: 'Add extra flavor to any order.',
+                items: [
+                    { name: 'Cheese', price: '$0.50', desc: 'Extra cheese slice or melt.' },
+                    { name: 'Bacon', price: '$1.00', desc: 'Crispy bacon strips.' },
+                    { name: 'Dressing Extra', price: '$0.50', desc: 'Side of your favorite salad dressing.' },
+                    { name: 'Sweet Relish', price: '$0.50', desc: 'Sweet pickle relish topping.' },
+                    { name: 'Cheese Sauce Extra', price: '$0.50', desc: 'Warm melty cheese sauce.' },
+                    { name: 'French Fries Side', price: '$2.95', desc: 'Side portion of crispy french fries.' },
+                    { name: 'Tater Tots Side', price: '$2.95', desc: 'Side portion of crunchy tater tots.' }
+                ]
+            },
+            {
+                category: 'kids',
+                categoryTitle: 'KIDS MEAL',
+                intro: 'Specially sized meals for kids.',
+                items: [
+                    { name: 'Kids Meal', price: '$4.95', desc: 'Choose one: Hamburger, Cheeseburger, Hot Dog, Chicken Tender, Fish, or Grilled Cheese.' }
+                ]
+            },
+            {
+                category: 'drinks',
+                categoryTitle: 'BEVERAGES & SHAKES',
+                intro: 'Refreshing drink choices and treats.',
+                items: [
+                    { name: 'Fountain Drink', price: '$2.25', desc: 'Assorted sodas.' },
+                    { name: 'Iced Tea', price: '$2.25', desc: 'Freshly brewed iced tea.' },
+                    { name: 'Coffee', price: '$1.95', desc: 'Hot freshly brewed coffee.' },
+                    { name: 'Canned Soda', price: '$1.50', desc: 'Selection of canned sodas.' },
+                    { name: 'Juice (Small)', price: '$1.75', desc: 'Assorted small fruit juices.' },
+                    { name: 'Juice (Large)', price: '$2.45', desc: 'Assorted large fruit juices.' },
+                    { name: 'Fresh Milk', price: '$1.75', desc: 'Cold fresh glass of milk.' },
+                    { name: 'Maltes Milkshake', price: '$4.25', desc: 'Flavors: Chocolate, vanilla, or strawberry.' }
+                ]
+            }
+        ];
+
+        // RENDER MENU ITEMS FUNCTION
+        function renderMenu(filterCategory = 'all') {
+            const container = document.getElementById('menuRenderGrid');
+            if (!container) return;
+            container.innerHTML = '';
+
+            MENU_DATA.forEach(section => {
+                if (filterCategory !== 'all' && section.category !== filterCategory) return;
+
+                const catBlock = document.createElement('div');
+                catBlock.className = 'space-y-6';
+
+                let itemsHTML = '';
+                section.items.forEach(item => {
+                    itemsHTML += `
+                        <div class="bg-heroesCharcoal p-5 rounded-lg border border-heroesBrass/20 hover:border-heroesRed transition-colors flex flex-col justify-between">
+                            <div class="flex justify-between items-start gap-4">
+                                <h4 class="font-display text-xl text-white uppercase">${item.name}</h4>
+                                <span class="font-display text-xl text-heroesBrass font-bold">${item.price}</span>
+                            </div>
+                            <p class="text-sm text-heroesCream/70 mt-2">${item.desc}</p>
+                        </div>
+                    `;
+                });
+
+                catBlock.innerHTML = `
+                    <div class="border-b-2 border-heroesRed pb-2">
+                        <h3 class="font-display text-3xl text-white uppercase tracking-wider">${section.categoryTitle}</h3>
+                        ${section.intro ? `<p class="text-xs text-heroesCream/70 mt-1 italic">${section.intro}</p>` : ''}
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${itemsHTML}
+                    </div>
+                `;
+
+                container.appendChild(catBlock);
+            });
+        }
+
+        // FILTER BUTTON CLICK HANDLER
+        function filterMenu(cat) {
+            document.querySelectorAll('.menu-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-heroesRed', 'text-white');
+                btn.classList.add('bg-heroesCharcoal', 'text-heroesCream');
+            });
+            event.target.classList.remove('bg-heroesCharcoal', 'text-heroesCream');
+            event.target.classList.add('bg-heroesRed', 'text-white');
+            renderMenu(cat);
+        }
+
+        // SINGLE PAGE ROUTING FUNCTION
+        function navigateTo(pageId) {
+            document.querySelectorAll('.page-view').forEach(view => {
+                view.classList.add('hidden');
+            });
+            const target = document.getElementById(`page-${pageId}`);
+            if (target) {
+                target.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // MOBILE MENU TOGGLE
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // TIME & EVENT EXPIRATION CHECK (America/New_York Time Logic)
+        function checkMusicBingoExpiration() {
+            // Target Event Date: November 9, 2026, 19:00 NY Time
+            const now = new Date();
+            const eventDate = new Date('2026-11-09T19:00:00-05:00');
+
+            const homeBadge = document.getElementById('bingoStatusBadge');
+            const eventsBadge = document.getElementById('eventsBingoBadge');
+            const timerText = document.getElementById('bingoTimerText');
+
+            if (now > eventDate) {
+                if (homeBadge) {
+                    homeBadge.innerText = 'Past Event / Archive';
+                    homeBadge.className = 'inline-block bg-gray-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full mb-4';
+                }
+                if (eventsBadge) {
+                    eventsBadge.innerText = 'Recent Past Event';
+                    eventsBadge.className = 'inline-block bg-gray-600 text-white text-xs font-bold uppercase px-3 py-1 rounded mb-4';
+                }
+                if (timerText) {
+                    timerText.innerText = 'This special event concluded on Nov 9, 2026. Check back for new upcoming dates!';
+                }
+            } else {
+                if (timerText) {
+                    const diffTime = Math.abs(eventDate - now);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    timerText.innerText = `Upcoming in ${diffDays} days! (Nov 9, 2026 at 7 PM)`;
+                }
+            }
+        }
+
+        // DYNAMIC 15-SECOND CTA ROTATION LOGIC
+        const DYNAMIC_CTAS = [
+            {
+                tag: "Hungry for Burgers & Wings?",
+                title: "Explore Heroes Grill Menu",
+                body: "From juicy burgers and bone-in wings to fresh salads and sides, check out our full menu online!",
+                btn1Text: "View Full Menu",
+                btn1Link: "#menu",
+                btn1Action: () => navigateTo('menu'),
+                btn2Text: "Call +1 860-828-9920",
+                btn2Link: "tel:+18608289920"
+            },
+            {
+                tag: "Weekly Entertainment",
+                title: "Join Us for Friday Karaoke!",
+                body: "Every Friday from 5 PM to 8 PM. Great music, cold draught beers, and friendly neighborhood fun.",
+                btn1Text: "Event Schedule",
+                btn1Link: "#events",
+                btn1Action: () => navigateTo('events'),
+                btn2Text: "Call Heroes",
+                btn2Link: "tel:+18608289920"
+            },
+            {
+                tag: "Takeout Grab & Go",
+                title: "Order Hot Food to Go",
+                body: "Paper or plastic, we have you covered! Call in your takeout order directly to our Berlin bar.",
+                btn1Text: "Call to Order",
+                btn1Link: "tel:+18608289920",
+                btn2Text: "See Food Items",
+                btn2Link: "#menu",
+                btn2Action: () => navigateTo('menu')
+            },
+            {
+                tag: "Visiting Mill Street?",
+                title: "Get Directions to Heroes",
+                body: "Located at 128 Mill Street, Berlin, CT. Stop by today for cold drinks and classic comfort food!",
+                btn1Text: "Google Maps",
+                btn1Link: "https://www.google.com/maps/place/Heroes+Grill+%26+Bar/@41.6255378,-72.7516464,17z/data=!3m1!4b1!4m6!3m5!1s0x89e7b483c3d051b9:0xa650f5695470f6f9!8m2!3d41.6255378!4d-72.7490715!16s%2Fg%2F1tlmpbyc",
+                btn2Text: "Hours & Info",
+                btn2Link: "#visit",
+                btn2Action: () => navigateTo('visit')
+            }
+        ];
+
+        let ctaIndex = 0;
+        let ctaTimer = null;
+        let ctaDismissedUser = false;
+
+        function showDynamicCTA() {
+            if (ctaDismissedUser) return;
+
+            const cta = DYNAMIC_CTAS[ctaIndex];
+            const prompt = document.getElementById('visitingPrompt');
+            const tag = document.getElementById('promptTag');
+            const title = document.getElementById('promptTitle');
+            const body = document.getElementById('promptBody');
+            const btn1 = document.getElementById('promptPrimaryBtn');
+            const btn2 = document.getElementById('promptSecondaryBtn');
+
+            if (!prompt) return;
+
+            tag.innerText = cta.tag;
+            title.innerText = cta.title;
+            body.innerText = cta.body;
+
+            btn1.href = cta.btn1Link;
+            btn1.onclick = (e) => {
+                if (cta.btn1Action) cta.btn1Action();
+                dismissPrompt();
+            };
+            btn1.querySelector('span').innerText = cta.btn1Text;
+
+            btn2.href = cta.btn2Link;
+            btn2.onclick = (e) => {
+                if (cta.btn2Action) cta.btn2Action();
+                dismissPrompt();
+            };
+            btn2.querySelector('span').innerText = cta.btn2Text;
+
+            // Fade in animation
+            prompt.classList.remove('hidden');
+
+            // Increment index for next 15 second cycle
+            ctaIndex = (ctaIndex + 1) % DYNAMIC_CTAS.length;
+        }
+
+        function dismissPrompt() {
+            const prompt = document.getElementById('visitingPrompt');
+            if (prompt) prompt.classList.add('hidden');
+        }
+
+        function startPeriodicCTARotation() {
+            // First call after 15 seconds
+            ctaTimer = setInterval(() => {
+                showDynamicCTA();
+            }, 15000);
+        }
+
+        // INITIALIZE ON DOM LOAD
+        window.onload = function() {
+            renderMenu('all');
+            checkMusicBingoExpiration();
+
+            // Trigger initial call-to-action prompt & start 15-second timer
+            setTimeout(() => {
+                showDynamicCTA();
+                startPeriodicCTARotation();
+            }, 15000);
+        };
+    </script>
+</body>
+</html>
